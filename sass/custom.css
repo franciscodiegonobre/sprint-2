@@ -3,6 +3,14 @@
   width: 100px !important;
 }
 
+.nav-link.active {
+  border-bottom: solid red !important;
+  font-weight: 600;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -3664,7 +3672,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-color: text-secondary;
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
