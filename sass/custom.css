@@ -3,6 +3,10 @@
   width: 100px !important;
 }
 
+.box-shadow {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
 .nav-link.active {
   border-bottom: solid red !important;
   font-weight: 600;
@@ -16,11 +20,30 @@
     height: 100vh;
   }
 }
+@media (min-width: 350px) {
+  .height-110 {
+    height: 110vh;
+  }
+}
 @media (min-width: 768px) {
   .width-75 {
     width: 75% !important;
   }
 }
+@media (min-width: 768px) {
+  .width-50 {
+    width: 50% !important;
+  }
+}
+.btn-sm, .btn-group-sm > .btn {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -2840,7 +2863,7 @@ textarea.form-control-lg {
 
 .btn {
   --bs-btn-padding-x: 0.75rem;
-  --bs-btn-padding-y: 0.375rem;
+  --bs-btn-padding-y: 0.5rem !important;
   --bs-btn-font-family: ;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;

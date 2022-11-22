@@ -5,8 +5,16 @@ $secondary: #14213d;
 
 $nav-link-color: text-secondary;
 
+$btn-padding-y: 0.5rem !important;
+$btn-padding-x-custom: 4rem;
+
+
 .btn-width {
     width: 100px !important;
+}
+
+.box-shadow {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
 }
 
 .nav-link.active {
@@ -28,10 +36,35 @@ $accordion-icon-width: 1.5rem;
     }
 }
 
+@media (min-width: 350px) {
+    .height-110 {
+        height: 110vh;
+    }
+}
+
 @media (min-width: 768px) {
     .width-75 {
         width: 75% !important;
     }
 }
 
+@media (min-width: 768px) {
+    .width-50 {
+        width: 50% !important;
+    }
+}
+
+$btn-padding-x-custom: 0.75rem;
+
+.btn-sm, .btn-group-sm > .btn {
+    padding-left: $btn-padding-x-custom !important;
+    padding-right: $btn-padding-x-custom !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
