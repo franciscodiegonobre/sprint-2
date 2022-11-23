@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmark</title>
+    <script src="https://kit.fontawesome.com/8ce587caba.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;0,500;1,100&family=Happy+Monkey&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;0,500;1,100&family=Happy+Monkey&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/custom.css">
 </head>
 <body>
@@ -36,8 +37,6 @@
             </button>
             </div>
         </nav>
-    </header>
-      <main>
         <div class="container d-flex align-items-center justify-content-center height-110">
             <div class="row">
                 <div class="col-12 col-md-6 order-1 order-md-0">
@@ -57,7 +56,9 @@
                 </div>
             </div>
         </div>
-            <article class="container">
+    </header>
+    <main>
+        <article class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="container w-75 mb-5">
@@ -105,8 +106,7 @@
                         </div>
                     </div>
                 </div>
-            </article>
-        </div>
+        </article>
         <article class="container mt-5 mb-5">
             <div class="row">
                 <div class="col-12">
@@ -219,7 +219,77 @@
                 </div>
             </div>
         </article>
-      </main>
+    </main>
+    <footer>
+        <div class="container-fluid bg-secondary">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container width-50 mb-5 mt-5">
+                        <p class="fw-bold text-center text-white">35.000+ ALREADY JOINED</p>
+                        <p class="fw-bold fs-3 text-center text-white">Stay up-to-date with what we're doing</h1>
+                        <form class="container needs-validation" novalidate action="" method="get" id="form1">
+                            <div class="row align-items-center">
+                            <div class="col-12 col-md-8 position-relative">
+                                <label for="emailInput" class="visually-hidden">Email</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email address" aria-describedby="emailHelp" required>
+                                <div class="invalid-tooltip">
+                                    Insert a valid email
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary btn-sm fw-bold btn-m-t" form="form1">Contact Us</button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-light mt-3 mb-3">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-2">
+                    <a class="d-flex justify-content-center" href="#">
+                        <img src="Images/Imagenes/logo-bookmark.svg" alt="logo" class="mw-100 m-2">
+                    </a>
+                </div>
+                <div class="col-md-8 d-flex flex-column flex-md-row text-center">
+                    <a class="fw-bold m-2 text-muted text-decoration-none" href="#">FEATURES</a>
+                    <a class="fw-bold m-2 text-muted text-decoration-none" href="#">PRICING</a>
+                    <a class="fw-bold m-2 text-muted text-decoration-none" href="#">CONTACT</a>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                    <a href="#">
+                        <i class="fa-brands fa-square-facebook m-2"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-square-twitter m-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </footer>
       <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+      </script>
 </body>
 </html>

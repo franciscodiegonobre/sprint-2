@@ -44,6 +44,23 @@
   border: none !important;
 }
 
+input::-moz-placeholder {
+  font-size: 14px;
+}
+
+input:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .btn-m-t {
+    margin-top: 10px;
+  }
+}
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

@@ -65,6 +65,16 @@ $btn-padding-x-custom: 0.75rem;
     border: none !important;
 }
 
+input::placeholder {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .btn-m-t {
+        margin-top: 10px
+    }
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 
